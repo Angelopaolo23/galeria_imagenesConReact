@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Card from './components/Card';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container bg-dark text-light row'>
+    <Header title="Galeria de fotografias de Angelo" />
+    
+    <Card url="https://images.pexels.com/photos/13973602/pexels-photo-13973602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" name="Fotografia 1" description="Pequeño pueblo perdido en la bruma"/>
+    <Card url="https://images.pexels.com/photos/13973602/pexels-photo-13973602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" name="Fotografia 1" description="Pequeño pueblo perdido en la bruma"/>
+    <Card url="https://images.pexels.com/photos/13973602/pexels-photo-13973602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" name="Fotografia 1" description="Pequeño pueblo perdido en la bruma"/>
+    <Footer />
     </div>
   );
 }
