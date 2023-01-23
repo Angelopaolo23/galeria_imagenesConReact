@@ -12,7 +12,7 @@ const BCard = (props) =>  {
                 <Card.Text>
                     {description}
                 </Card.Text>
-                <Button variant="outline-dark"><a className='text-muted text-reset text-decoration-none' href={linkAutor}>Más fotos del autor(a)</a></Button>
+                <Button variant="outline-dark"><a className='text-reset text-decoration-none' href={linkAutor}>Más fotos del autor(a)</a></Button>
             </Card.Body>
         </Card>
     );
