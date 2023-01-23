@@ -1,12 +1,21 @@
-const Card = (props) => {
-    const {name, description, url} = props;
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+
+
+const BCard = (props) =>  {
+    const {title, description, url, linkAutor} = props;
     return (
-        <div className="container w-25 border card">
-            <img className="image mt-2" src={url}></img>
-            <h2 className="text-center">{name}</h2>
-            <p className="text-center">{description}</p>
-        </div>
-    )
+        <Card style={{ width: '350px' }}>
+            <Card.Img variant="top" src={url} />
+            <Card.Body>
+                <Card.Title>{title}</Card.Title>
+                <Card.Text>
+                    {description}
+                </Card.Text>
+                <Button variant="outline-dark"><a className='text-muted text-reset text-decoration-none' href={linkAutor}>Más fotos del autor(a)</a></Button>
+            </Card.Body>
+        </Card>
+    );
 };
 
-export default Card;
+export default BCard;
